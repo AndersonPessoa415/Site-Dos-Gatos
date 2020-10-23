@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas.teste</title>
+
+    <style>
+        body {
+            background-image: url("img/cat.jfif");
+            font-family: sans-serif;
+            height: 30cm;
+            width: 10cm;
+        }
+
+        h1 {
+            font-size: 42px;
+            text-shadow: 10px 10px 10px cornsilk;
+            box-shadow: 100px 0px 100px black;
+            background-color: rgba(222, 184, 135, 0.5);
+            width: 1670px;
+            text-align: center;
+        }
+
+        .nav_tabs {
+            text-align: center;
+            height: 500px;
+            width: 1000px;
+            padding: 10px 335px 325px;
+            position: relative;
+            background-color: rgba(255, 235, 205, 0.2);
+        }
+
+        .nav_tabs ul {
+            list-style-type: none;
+        }
+
+        .nav_tabs ul li {
+            float: left;
+        }
+
+        .nav_tabs label {
+            width: 220px;
+            padding: 20px;
+            color: wheat;
+            display: block;
+            cursor: pointer;
+            font-size: 23px;
+            background-color: #363b48;
+            border-radius: 100px;
+        }
+
+        .rb_tabs:checked~label {
+            background-color: #e54e43
+        }
+
+        .rb_tabs {
+            display: none;
+        }
+
+        .content {
+            border-top: 0px solid rgba(108, 134, 11, 0.05);
+            left: 0;
+            position: absolute;
+            display: none;
+            height: 520;
+            width: 800;
+        }
+
+        .rb_tabs:checked~.content {
+            display: block;
+        }
+
+        img {
+            padding: 25px;
+            height: 600px;
+            width: 400px;
+            float: left;
+            box-shadow: 10px 10px 30px black;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            background-color:rgba(255, 235, 205, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Site Dos Gatinhos</h1>
+
+    <nav class="nav_tabs">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rb_tabs" id="tabs1" checked>
+                <label for="tabs1"> Gatim Cinzinha</label>
+                <div class="content">
+                    <article>
+                        <img src="img/cinza.jfif">
+                        <p>Com pelagem cinza e olhos verdes, o Korat tem charme, companheirismo e muito amor para dar
+                            aos
+                            donos. Conhecida pelas características físicas, a raça de gato cinza nasceu na Tailândia,
+                            onde é
+                            visto como um amuleto da sorte por onde quer que passe.</p>
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rb_tabs" id="tabs2">
+                <label for="tabs2"> Gatim Orange</label>
+                <div class="content">
+                    <article>
+                        <img src="img/orange.jfif" alt="">
+                        <p>A pelagem tabby, como também é conhecida, é apenas um padrão, e não uma raça, como muita
+                            gente acha. Ou seja, as cores não definem a linhagem, mas sim as características genéticas e
+                            fisiológicas, determinadas por um padrão. Sendo assim, nem todos da mesma cor são da mesma
+                            raça. Por exemplo, nem todos os bichanos brancos são Persas, pois existem muitos outros
+                            SRD’s que também são brancos.</p>
+                    </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rb_tabs" id="tabs3">
+                <label for="tabs3"> Gatim Multi</label>
+                <div class="content">
+                    <article>
+                        <img src="img/multi.jfif" alt="">
+                        <p>Gatos tricolores, como, por exemplo, branco, laranja e preto ou ainda com 4 cores,
+                            normalmente são fêmeas, pois a coloração é uma herança genética ligada ao sexo feminino
+                            destes felinos. Em contrapartida, os gatos “romanos” laranjas (gatos amarelos) são em sua
+                            maioria machos, porém é possível deparar-se com fêmeas nessa cor.</p>
+                    </article>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

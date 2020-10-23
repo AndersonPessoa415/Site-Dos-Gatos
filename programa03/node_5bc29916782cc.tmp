@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas.teste</title>
+
+    <style>
+        body {
+            background-image: url("img/cat.jfif");
+            height: 40cm;
+            width:  10cm;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-family: sans-serif;
+            text-shadow: 10px 10px 10px cornsilk;
+            box-shadow:  10px 10px 100px black;
+            background-color: burlywood;
+            
+        }
+       .nav_tabs {
+           width: 650px;
+           height: 800px;
+           margin: 100px 500px auto;
+          position: relative;
+          background-color:rgba(108, 134, 11, 0.5);
+       }
+       .nav_tabs ul{
+           list-style: none;
+       }
+       .nav_tabs ul li{
+            float: left;
+            text-align: center;
+       }
+       .nav_tabs label{
+           width: 190px;
+           height: 80px;
+           text-align: center;
+           background-color: rgb(41, 38, 38);
+           color: wheat;
+           display: block;
+           cursor: pointer;
+           font-size: 18px;
+       }
+       .rb_tabs:checked ~ label{
+           background-color: brown;
+       }
+       .rb_tabs{
+           display: none;
+       }
+
+    </style> 
+</head>
+<body>
+    <hr>
+ <h1> Site Dos Gatinhos</h1>
+</hr>
+
+<nav class="nav_tabs">
+    <ul>
+        <li>
+            <input type="radio" name="tabs" class="rb_tabs" id="tabs" checked>
+            <label for="tab1"> gatim cinzinha</label>
+            <div class="content"></div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rb_tabs" id="tabs">
+            <label for="tab1"> gatim orange</label>
+            <div class="content"></div>
+        </li>
+        <li>
+            <input type="radio" name="tabs" class="rb_tabs" id="tabs">
+            <label for="tab1"> gatim multi</label>
+            <div class="content"></div>
+        </li>
+    </ul>
+
+</nav>
+</body>
+</html>
